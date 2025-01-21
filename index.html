@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main" id="nav-main">
+            <ul class="nav__options">
+                <li aria-hidden="true"> <img src="./assets/icon-x-white.png" alt="logo"> </li>
+                <li>
+                    <a href="#hero" class="list__link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about" class="list__link">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#projects" class="list__link">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#contact" class="list__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button aria-label="Toggle Navigation Options" class="nav-sec__button" id="nav-sec__button" tabindex="-1" onclick="toggleSmallNav()">
+            <img src="./assets/bars-solid.svg" />
+        </button>
+        <nav class="nav-secondary" id="navSmall">
+            <ul class="nav-sec__options">
+                <li>
+                    <a href="#hero" class="sec-list__link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about" class="sec-list__link">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#projects" class="sec-list__link">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#contact" class="sec-list__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="section-banner" class="sections legend" id="hero">
+            <h3 id="section-banner">YO SOY</h3>
+            <p>Puedo ilustrar. Puedo diseñar. Puedo hacer páginas web. Estoy a su servicio.</p>
+        </section>
+
+        <section aria-labelledby="section-about" class="sections about" id="about">
+            <h3 id="section-about">SOBRE MÍ</h3>
+            <p>Egresada en Técnico de Diseño Gráfico, tengo experiencia en diseño con enfoque en identidad visual. También tengo habilidad para ilustrar, sea tradicional o digitalmente, al igual que destreza en procesamiento de imágenes y videos.
+                Deseo plasmar ideas con mis diseños, usando mi creatividad y manteniendo excelente comunicación con quien desee trabajar conmigo y no me conformo hasta que todos estén satisfechos con mi trabajo.</br> </br>
+                Tengo capacidades en: </p>
+            <ul class="skills__container">
+                <li class="skill">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"/>
+                    <h4>Photoshop</h4>
+                    <div class="bar__container">
+                        <div class="bar excellent animatable"></div>
+                    </div>
+                    <span>Nivel: Excelente</span>
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png?f=webp"/>
+                    <h4>HTML</h4>
+                    <div class="bar__container">
+                        <div class="bar good animatable"></div>
+                    </div>
+                    <span>Nivel: Bueno</span>
+                </li>
+                <li class="skill">
+                    <img src="https://img.icons8.com/?size=512&id=21278&format=png"/>
+                    <h4>CSS</h4>
+                    <div class="bar__container">
+                        <div class="bar excellent animatable"></div>
+                    </div>
+                    <span>Nivel: Excelente</span>
+                </li>
+                <li class="skill">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"/>
+                    <h4>JavaScript</h4>
+                    <div class="bar__container">
+                        <div class="bar good animatable"></div>
+                    </div>
+                    <span>Nivel: Bueno</span>
+                </li>
+                <li class="skill">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                    <h4>React</h4>
+                    <div class="bar__container">
+                        <div class="bar basic animatable"></div>
+                    </div>
+                    <span>Nivel: Básico</span>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="section-projects" class="sections projects" id="projects">
+            <h3 id="section-projects">PROYECTOS</h3>
+            <article>
+                <div class="thumbnail__container">
+                    <img src="./assets/Encriptador.png"/>
+                </div>
+                <section class="website__info">
+                    <h4>Encriptador de texto</h4>
+                    <p>Encriptador de texto simple a cualquier clave que desees</p>
+                    <div class="web-links">
+                        <a href="https://encriptador-desafio-alura-g7.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar página</a>
+                        <a href="https://github.com/Amapola-Nexus/Encriptador-Desafio-Alura-G7" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <section class="website__info">
+                    <h4>AluraGreen</h4>
+                    <p>Página para listar productos usando un fake REST API con JSON Server</p>
+                    <div class="web-links">
+                        <a href="https://alura-geek-challenge-tau.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar página</a>
+                        <a href="https://github.com/Amapola-Nexus/AluraGeek-Challenge" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                    </div>
+                </section>
+                <div class="thumbnail__container">
+                    <img src="./assets/AluraGreen.png"/>
+                </div>
+            </article>
+            <article>
+                <div class="thumbnail__container">
+                    <img src="./assets/AluraFlix.png"/>
+                </div>
+                <section class="website__info">
+                    <h4>AluraFlix</h4>
+                    <p>Página creada con React, usando un fake REST API con JSON Server</p>
+                    <div class="web-links">
+                        <a href="https://alura-flix-challenge-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar página</a>
+                        <a href="https://github.com/Amapola-Nexus/AluraFlix-Challenge" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section aria-labelledby="section-contact" class="sections contact" id="contact">
+            <h3 id="section-contact">CONTACTO</h3>
+            <form>
+                <label for="cname">Tu nombre</label>
+                <input type="text" id="cname" name="cname" required>
+                <label for="email">Tu email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Asunto del mensaje</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Tu mensaje</label>
+                <textarea rows="4" id="message" placeholder="Este formulario no sirve, probablemente" required></textarea>
+                <div class="form__btns">            
+                    <button type="submit" id="submit-btn">Enviar correo</button>
+                    <button type="reset">Limpiar campos</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
